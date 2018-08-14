@@ -3,3 +3,11 @@ version = 1.0
 dependencies {
 
 }
+
+jar {
+    manifest {
+        attributes("Implementation-Title": project.name,
+                   "Implementation-Version": version,
+                   "Main-Class": "com.dickson.autohome.Main")
+    }
+}
