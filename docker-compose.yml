@@ -1,0 +1,18 @@
+#######################################################
+# Main Docker Compose to start the server
+#######################################################
+version: '2.1'
+
+services:
+  server:
+    container_name: server
+    build: server
+    ports:
+      - "8080:8080"
+
+  message-queue:
+    container_name: message-queue
+    build: message-queue
+    ports:
+      - "8161:8161"
+      - "61616:61616"
