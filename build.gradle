@@ -1,0 +1,13 @@
+repositories {
+	mavenCentral()
+}
+
+// External Dependencies
+project.ext {
+
+}
+
+ext.libraries = [
+
+]
+

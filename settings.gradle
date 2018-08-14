@@ -1,0 +1,5 @@
+
+rootProject.name = 'auto-home'
+
+include 'server'
+project(':server').projectDir = "$rootDir/server" as File
